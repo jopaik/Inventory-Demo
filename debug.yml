@@ -1,0 +1,9 @@
+---
+- name: debug secret
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: show the_secret
+      debug:
+        msg: "{{ the_secret }}"
